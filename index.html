@@ -59,14 +59,14 @@
 
       <main>
         <div class="row">
-          <section id="options" class="col-lg-4 col-sm-12">
+          <section id="options" class="col-lg-4 col-sm-12 order-1">
             <h2>Options</h2>
             <form action="#">
               <label>Search <input id="inSearch" type="text" /></label>
             </form>
 
             <h3>Create Listing</h3>
-            <form action="#">
+            <form action="#" id="createForm">
               <div class="mb-1">
                 <label class="form-label"
                   >Title: <input type="text" class="form-control"
@@ -101,7 +101,7 @@
             </form>
           </section>
 
-          <section id="listings" class="col-lg-8 col-sm-12">
+          <section id="listings" class="col-lg-8 col-sm-12 order-0">
             <h2>Listings</h2>
 
             <div class="listingsGroup row">
@@ -270,5 +270,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
