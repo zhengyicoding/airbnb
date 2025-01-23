@@ -1,276 +1,96 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Airbnb listings exmaple</title>
 
-    <link rel="icon" href="./favicon.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airbnb listings exmaple</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+  <link rel="icon" href="./favicon.png" />
 
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-  <body>
-    <div class="container">
-      <header>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Airbnb Exmaple Listings</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./about.html"
-                    >About</a
-                  >
-                </li>
-              </ul>
-            </div>
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Airbnb Exmaple Listings</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./about.html">About</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-
-        <h1>Apartment Listings</h1>
-      </header>
-
-      <main>
-        <div class="row">
-          <section id="options" class="col-lg-4 col-sm-12 order-1">
-            <h2>Options</h2>
-            <form action="#">
-              <label>Search <input id="inSearch" type="text" /></label>
-            </form>
-
-            <h3>Create Listing</h3>
-            <form action="#" id="createForm">
-              <div class="mb-1">
-                <label class="form-label"
-                  >Title: <input type="text" class="form-control"
-                  name="title"
-                  required="true"
-                /></label>
-              </div>
-              <!-- /.mb-1 form row -->
-
-              <div class="mb-1">
-                <label class="form-label"
-                  >Price: <input type="number" class="form-control"
-                  name="price"
-                  value="1500"
-                /></label>
-              </div>
-              <!-- /.mb-1 form row -->
-
-              <div class="mb-1">
-                <button
-                  id="btnCreate"
-                  type="submit"
-                  class="btn btn-outline-primary"
-                >
-                  Create
-                </button>
-
-                <button class="btn btn-outline-secondary" type="button">
-                  Clear
-                </button>
-              </div>
-            </form>
-          </section>
-
-          <section id="listings" class="col-lg-8 col-sm-12 order-0">
-            <h2>Listings</h2>
-
-            <div class="listingsGroup row">
-              <div class="col-sm-4 mb-4">
-                <div class="listing card">
-                  <img
-                    src="https://placehold.co/300x200"
-                    class="card-img-top"
-                    alt="Listing thumbnail"
-                  />
-                  <div class="card-body">
-                    <h3 class="title card-title">
-                      Soma Apartment (<span class="price">$2450</span>,
-                      <span class="sqft">450sqft</span>)
-                    </h3>
-                    <div class="card-text">
-                      <p class="description">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Ex architecto perspiciatis, provident temporibus
-                        voluptatibus assumenda in nihil optio odio itaque quam
-                        nesciunt expedita eligendi reiciendis velit obcaecati
-                        aperiam corrupti! Laboriosam.
-                      </p>
-                      <div class="controls">
-                        <button type="button" class="btn btn-primary">
-                          Msg
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                          Rent
-                        </button>
-                      </div>
-                    </div>
-                    <!-- /.card-text -->
-                  </div>
-                  <!-- /.card-body -->
-                </div>
-                <!-- /listing -->
-              </div>
-              <!-- /col-sm-4 mb-4 for listing -->
-
-              <div class="col-sm-4 mb-4">
-                <div class="listing card">
-                  <img
-                    src="https://placehold.co/300x200"
-                    class="card-img-top"
-                    alt="Listing thumbnail"
-                  />
-                  <div class="card-body">
-                    <h3 class="title card-title">
-                      Soma Apartment (<span class="price">$2450</span>,
-                      <span class="sqft">450sqft</span>)
-                    </h3>
-                    <div class="card-text">
-                      <p class="description">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Ex architecto perspiciatis, provident temporibus
-                        voluptatibus assumenda in nihil optio odio itaque quam
-                        nesciunt expedita eligendi reiciendis velit obcaecati
-                        aperiam corrupti! Laboriosam.
-                      </p>
-                      <div class="controls">
-                        <button type="button" class="btn btn-primary">
-                          Msg
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                          Rent
-                        </button>
-                      </div>
-                    </div>
-                    <!-- /.card-text -->
-                  </div>
-                  <!-- /.card-body -->
-                </div>
-                <!-- /listing -->
-              </div>
-              <!-- /col-sm-4 mb-4 for listing -->
-
-              <div class="col-sm-4 mb-4">
-                <div class="listing card">
-                  <img
-                    src="https://placehold.co/300x200"
-                    class="card-img-top"
-                    alt="Listing thumbnail"
-                  />
-                  <div class="card-body">
-                    <h3 class="title card-title">
-                      Soma Apartment (<span class="price">$2450</span>,
-                      <span class="sqft">450sqft</span>)
-                    </h3>
-                    <div class="card-text">
-                      <p class="description">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Ex architecto perspiciatis, provident temporibus
-                        voluptatibus assumenda in nihil optio odio itaque quam
-                        nesciunt expedita eligendi reiciendis velit obcaecati
-                        aperiam corrupti! Laboriosam.
-                      </p>
-                      <div class="controls">
-                        <button type="button" class="btn btn-primary">
-                          Msg
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                          Rent
-                        </button>
-                      </div>
-                    </div>
-                    <!-- /.card-text -->
-                  </div>
-                  <!-- /.card-body -->
-                </div>
-                <!-- /listing -->
-              </div>
-              <!-- /col-sm-4 mb-4 for listing -->
-
-              <div class="col-sm-4 mb-4">
-                <div class="listing card">
-                  <img
-                    src="https://placehold.co/300x200"
-                    class="card-img-top"
-                    alt="Listing thumbnail"
-                  />
-                  <div class="card-body">
-                    <h3 class="title card-title">
-                      Soma Apartment (<span class="price">$2450</span>,
-                      <span class="sqft">450sqft</span>)
-                    </h3>
-                    <div class="card-text">
-                      <p class="description">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Ex architecto perspiciatis, provident temporibus
-                        voluptatibus assumenda in nihil optio odio itaque quam
-                        nesciunt expedita eligendi reiciendis velit obcaecati
-                        aperiam corrupti! Laboriosam.
-                      </p>
-                      <div class="controls">
-                        <button type="button" class="btn btn-primary">
-                          Msg
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                          Rent
-                        </button>
-                      </div>
-                    </div>
-                    <!-- /.card-text -->
-                  </div>
-                  <!-- /.card-body -->
-                </div>
-                <!-- /listing -->
-              </div>
-              <!-- /col-sm-4 for listing -->
-            </div>
-            <!-- /listingsGroup -->
-          </section>
         </div>
-        <!-- /.row -->
-      </main>
+      </nav>
 
-      <footer>
-        <p>Made by John with 🏋🏼‍♀️❤️</p>
-      </footer>
-    </div>
-    <!-- /.container -->
+      <h1>Apartment Listings</h1>
+    </header>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <main>
+      <div class="row">
+        <section id="options" class="col-lg-4 col-sm-12 order-1">
+          <h2>Options</h2>
+          <form action="#">
+            <label>Search <input id="inSearch" type="text" /></label>
+          </form>
 
-    <script type="module" src="./js/main.js"></script>
-  </body>
+          <h3>Create Listing</h3>
+          <form action="#" id="createForm">
+            <div class="mb-1">
+              <label class="form-label">Title: <input type="text" class="form-control" name="title" required="true" /></label>
+            </div>
+            <!-- /.mb-1 form row -->
+
+            <div class="mb-1">
+              <label class="form-label">Price: <input type="number" class="form-control" name="price" value="1500" /></label>
+            </div>
+            <!-- /.mb-1 form row -->
+
+            <div class="mb-1">
+              <button id="btnCreate" type="submit" class="btn btn-outline-primary">
+                Create
+              </button>
+
+              <button class="btn btn-outline-secondary" type="button">
+                Clear
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <section id="listings" class="col-lg-8 col-sm-12 order-0">
+          <h2>Listings</h2>
+
+          <div class="listingsGroup row" id="listingContainer">
+
+          </div>
+          <!-- /listingsGroup -->
+        </section>
+      </div>
+      <!-- /.row -->
+    </main>
+
+    <footer>
+      <p>Made by John with 🏋🏼‍♀️❤️</p>
+    </footer>
+  </div>
+  <!-- /.container -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+
 </html>
