@@ -8,7 +8,7 @@ const listingsContainer = document.getElementById("listingContainer");
 
 async function loadListings() {
   try {
-    const response = await fetch("./airbnb_sf_listings_500.json");
+    const response = await fetch("https://raw.githubusercontent.com/zhengyicoding/airbnb/main/airbnb_sf_listings_500.json");
     const listings = await response.json();
 
     listings.slice(0, 50).forEach((listing) => {
