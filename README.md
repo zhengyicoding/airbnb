@@ -1,7 +1,9 @@
-<<<<<<< HEAD
-# airbnb_demo_page_2
-A dummy project to demonstrate basic HTML features
-=======
-# airbnb
+# airbnb_demo_page with 50 airbnb items added
+A dummy project to demonstrate basic HTML features and JavaScript usage
+
+Deployed and accessible through https://zhengyicoding.github.io/airbnb/
+
 JavaScript and DOM self assessment
->>>>>>> 7d3534a81a15f9c19f2d4b85e0e8d0c9c4b19c5c
+
+<img width="1150" alt="image" src="https://github.com/user-attachments/assets/3d0156a8-66c6-4703-a090-724cf9fd2ba8" />
+
