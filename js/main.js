@@ -22,6 +22,7 @@ async function loadListings() {
 
 function createListingCard(listing) {
   const card = document.createElement("div");
+  card.setAttribute("class", "listing");
   card.classList.add("col", "mb-4");
 
   const amenities = JSON.parse(listing.amenities);
@@ -39,6 +40,10 @@ function createListingCard(listing) {
         </div>
         <p class="card-text">Price: $${listing.price} per night</p>
       </div>
+       <div class="controls">
+              <button onclick="contactHost(${listing.id})">Message Host</button>
+              <button onclick="bookListing(${listing.id})">Book Now</button>
+          </div>
     </div>
   `;
 
